@@ -1,7 +1,4 @@
-import { useState } from 'react'
- import {
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
+ import { useState } from 'react'
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -14,11 +11,21 @@ import DevicesIcon from '@mui/icons-material/Devices';
 import WebhookIcon from '@mui/icons-material/Webhook';
 import Container from '@mui/material/Container';
 import SegmentIcon from '@mui/icons-material/Segment';
+import CloseIcon from '@mui/icons-material/Close';
 import './Navbar.css'
-import { Button, Hidden } from '@mui/material';
+import { Button } from '@mui/material';
 
 const Navbar = () => {
-     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+     const [isNavVisible, setIsNavVisible] = useState(false);
+
+     const handleMouseEnter = () => {
+         setIsNavVisible(true);
+     };
+ 
+     const handleMouseLeave = () => {
+         setIsNavVisible(false);
+     };
+ 
   return (
     <>
 <header className="bg-white" style={{marginTop:"-40px"}}>
@@ -255,7 +262,7 @@ const Navbar = () => {
 </div>
 <div className="dropdown">
   <button className="dropbtn">Whom We Serve<KeyboardArrowDownIcon/></button>
-  <div className="dropdown-content1" style={{width:"430px",paddingTop:"20px",marginTop:"90px"}}>
+  <div className="dropdown-content1" style={{width:"430px",paddingTop:"10px",marginTop:"0px"}}>
   <div style={{display:"flex"}}>
     <Box>
     <Typography variant='h5'>Industries</Typography>
@@ -309,14 +316,17 @@ const Navbar = () => {
           </a>
        
         <div className="flex lg:hidden" style={{float:"right"}}>
-        <button className='icon'>
-          <SegmentIcon style={{fontSize:"32px",float:"right",marginTop:"15px"}}  />
-          </button>
+        <button className='icon' onClick={handleMouseEnter} >
+          <SegmentIcon style={{fontSize:"32px",float:"right",marginTop:"15px"}}  /></button>
           </div>
             </div>
             <Box  >
-              <div className="nav" >
-                <a href='#'>Home</a>
+              <div className="nav" style={{display:isNavVisible?'block':'none'}}>
+              <button onClick={handleMouseLeave}>
+              <CloseIcon style={{fontSize:"32px",float:"right",marginTop:"15px"}}/>
+            </button>
+            <div style={{display:"block"}}>
+                <a href='#' >Home</a>
                 <div className="dropdown">
   <button className="dropbtn">Products<KeyboardArrowDownIcon/></button>
   <div className="content1">
@@ -379,6 +389,7 @@ const Navbar = () => {
     <a href="#">Our Infrastructure</a>
     <a href='#'>Contact Us</a>
   </div>
+</div>
 </div>
               </div>
             </Box>
