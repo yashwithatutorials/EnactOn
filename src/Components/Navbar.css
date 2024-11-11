@@ -79,9 +79,9 @@
 .content1 {
   display: none;
   position: absolute;
-  background-color: white;
   min-width: 160px;
   z-index: 1;
+  font-size: 18px;
 }
 .icon {
   width: 50px;
@@ -105,3 +105,11 @@
     display: none !important;
   }
 } */
+ 
+.sidebar{
+  margin-right: -190px;
+  text-align: center;
+  background-color:white;
+  margin-top: -50px;
+  position: fixed;
+}
