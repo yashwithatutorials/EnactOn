@@ -1,8 +1,8 @@
 
 import './App.css'
- import Example from './Components/Example'
 import Navbar from './Components/Navbar'
 import Main from './Components/Main'
+import Aboutus from './Components/Aboutus'
 function App() {
   
 
@@ -11,6 +11,7 @@ function App() {
       <Navbar/>
       {/* <Example/> */}
       <Main/>
+      <Aboutus/>
     </>
   )
 }
