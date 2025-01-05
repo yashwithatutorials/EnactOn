@@ -22,7 +22,10 @@ const Navbar = () => {
          setIsNavVisible(true);
          document.getElementById('sideBar').style.marginRight="10px";
          document.getElementById('sideBar').style.marginLeft="10px";
-     };
+         document.getElementById('sideBar').style.width="200px";
+        document.getElementById('sideBar').style.backdropFilter="blur(10px)";
+        
+     }
  
      const handleMouseLeave = () => {
          setIsNavVisible(false);
@@ -45,7 +48,7 @@ const Navbar = () => {
               component='img' 
               src='../../src/assets/enact.png' 
               sx={{
-              width:{md:"300px",lg:"300px"},
+              width:{md:"200px",lg:"300px"},
               marginLeft:{lg:"-70px",md:"-45px"},
                marginTop:{md:"-25px"}}}/>
           </a>
@@ -343,14 +346,14 @@ const Navbar = () => {
        
         <div className="flex lg:hidden" style={{float:"right"}}>
         <button className='icon' onClick={handleMouseEnter} >
-          <SegmentIcon style={{fontSize:"32px",float:"right",marginTop:"15px"}}  /></button>
+          <SegmentIcon style={{fontSize:"32px",float:"right",marginTop:"15px",color:"black"}}  /></button>
           </div>
             </div>
             <Box  >
             <div className='sidebar' id='sideBar'>
               <div className="nav" style={{display:isNavVisible?'block':'none',float:"right"}}>
               <button onClick={handleMouseLeave} >
-              <CloseIcon style={{fontSize:"32px",float:"right",marginTop:"30px",marginRight:"-60px"}}/>
+              <CloseIcon style={{fontSize:"32px",float:"right",marginTop:"10px",marginRight:"-150px"}}/>
             </button>
             <div style={{display:"block",marginTop:"40px"}}>
                 <a href='#' style={{display:"block"}}>Home</a>
@@ -417,6 +420,8 @@ const Navbar = () => {
     <a href='#'>Contact Us</a>
   </div>
 </div>
+<Button sx={{fontSize:{lg:"21px"},color:"white",width:'150px',marginTop:"10px"}} 
+className='bg-gradient-to-r from-emerald-500 to-orange-500' >Let ' s talk</Button>
 </div>
               </div>
               </div>

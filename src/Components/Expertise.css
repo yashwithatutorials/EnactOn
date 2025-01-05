@@ -1,0 +1,47 @@
+.main{
+    color: rgb(7, 176, 176);
+    font-size: larger;
+    font-weight: 700;
+}
+.tabs{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.tabs button{
+    padding-left: 25px;
+    font-size:large;
+    font-weight: 500;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    
+}
+
+@media screen and (min-width:1132px){
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 190px;
+    }
+  
+
+}
+@media screen and (mix-width:800px){
+    .icons{
+        width:30px;
+        height: 30px;
+    }
+}
+.icons{
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+

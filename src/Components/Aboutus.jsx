@@ -1,15 +1,10 @@
-import React from 'react'
+// import React from 'react'
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { Button } from '@mui/material';
-import PhonelinkSetupIcon from '@mui/icons-material/PhonelinkSetup';
-import WebIcon from '@mui/icons-material/Web';
-import MemoryIcon from '@mui/icons-material/Memory';
-import ComputerIcon from '@mui/icons-material/Computer';
-import SendTimeExtensionIcon from '@mui/icons-material/SendTimeExtension';
-import DevicesIcon from '@mui/icons-material/Devices';
-import WebhookIcon from '@mui/icons-material/Webhook';
+// import { Button } from '@mui/material';
 import './Aboutus.css';
+import './Products'
+import Products from './Products';
 const Aboutus = () => {
   const services = [
     {
@@ -86,15 +81,18 @@ const Aboutus = () => {
         </div>
         <div className='text-center'>
         
-          <Typography sx={{fontSize:"32px",color:"blue"}}>
+          <Typography sx={{fontSize:"32px",color:"blue",display:"inline"}}>
           <Box 
               component='img' 
               src='../../src/assets/book.png' 
-              sx={{width:"190px"}}
+              sx={{width:"190px",marginLeft:"-190px",marginTop:"30px",display:"inline"}}
               />
-          World-Class<br></br><span style={{color:"black"}}>Our Unique Products</span></Typography>
-          <Typography sx={{fontSize:"25px"}}>Our Unique Products</Typography>
-          
+          World-Class<br></br>
+          <Typography   sx={{color:"black",marginLeft:"90px",marginTop:"-90px",fontSize:"35px"}}>Our Unique Products</Typography>
+          </Typography>
+          {/* <Typography sx={{fontSize:"25px"}}>Our Unique Products</Typography>
+           */}
+           <Products/>
         </div>
 
     </>
