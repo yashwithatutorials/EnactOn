@@ -1,0 +1,19 @@
+.cus{
+    text-align: center;
+    margin-top: 60px;
+}
+.pow{
+    font-weight: bold;
+}
+.glo{
+    color:brown
+}
+img{
+    margin: 0 auto;
+}
+a{
+    text-decoration: underline;
+}
+a:hover{
+    color: rgb(88, 169, 169);
+}

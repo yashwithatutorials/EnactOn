@@ -26,7 +26,8 @@
 
 .card:hover {
     transform: translateY(-5px);
-    background-image: linear-gradient(rgb(249, 239, 97), rgb(96, 212, 248));
+    /* background-image: linear-gradient(rgb(249, 239, 97), rgb(96, 212, 248)); */
+    background: linear-gradient(to top, #95dcee, #f5c897);
 }
 
 .card h3 {

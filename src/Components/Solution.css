@@ -1,0 +1,27 @@
+.ind{
+    margin-bottom: 50px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.gri{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+    
+}
+.industry-card{
+   margin-top: 15px;
+    text-align: center;
+}
+.busi{
+    text-align: center;
+}
+.icon{
+    background-color: rgb(240, 254, 249);
+    width: auto;
+    border-radius: 10%;
+   
+}

@@ -13,7 +13,7 @@
     font-size:large;
     font-weight: 500;
 }
-.grid {
+.grids {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,7 +23,7 @@
 }
 
 @media screen and (min-width:1132px){
-    .grid{
+    .grids{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -31,12 +31,6 @@
     }
   
 
-}
-@media screen and (mix-width:800px){
-    .icons{
-        width:30px;
-        height: 30px;
-    }
 }
 .icons{
     margin-top: 40px;

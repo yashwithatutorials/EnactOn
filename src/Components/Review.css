@@ -1,0 +1,47 @@
+.rev{
+    text-align: center;
+    margin-top: 50px;
+}
+.rev h2{
+    color: brown;
+}
+.rev h3{
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.car{
+   height: auto;
+    border: 1px solid rgb(45, 186, 241);
+    border-radius: 10px;
+    width: 350px;
+    padding-bottom: 4px;
+    height: 350px;
+    padding: 12px;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+}
+.star{
+    height: 100px;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+.car:hover{
+    scale: 1.1;
+}
+.rev-grid{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+}
+@media screen and (max-width:760px){
+    .car{
+        width: auto;
+        margin: 20px;
+    }
+}
+

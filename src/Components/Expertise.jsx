@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import './Expertise.css'
 const frontendTechnologies = [
     { name: 'Angular JS', logo: 'https://angular.io/assets/images/logos/angular/angular.svg' },
-    { name: 'TypeScript', logo: 'https://www.typescriptlang.org/icons/icon-48x48.png' },
+    { name: 'TypeScript', logo: '/../../src/assets/typescript.png' },
     { name: 'React JS', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
     { name: 'Next JS', logo: 'https://www.svgrepo.com/show/354112/nextjs.svg' },
     { name: 'Vue JS', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg' },
@@ -57,7 +57,7 @@ const Expertise = () => {
 
     const handleCategoryChange = (category) => {
         setSelectedCategory(category);
-        document.getElementsByTagName('button').style.textdecoration="underline";
+        
     };
 
     const technologies = selectedCategory === 'frontend' ? frontendTechnologies :
@@ -82,7 +82,7 @@ const Expertise = () => {
                 <button onClick={() => handleCategoryChange('thirdparty')}>Third Party Integration</button>
 
             </div>
-            <div className='grid'>
+            <div className='grids'>
                 {technologies.map((tech, index) => (
                     <div key={index} className='text-center' >
                         <img src={tech.logo} alt={tech.name} className='icons' />
