@@ -15,6 +15,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import './Navbar.css'
 import { Button } from '@mui/material';
 
+
 const Navbar = () => {
      const [isNavVisible, setIsNavVisible] = useState(false);
 
@@ -22,7 +23,7 @@ const Navbar = () => {
          setIsNavVisible(true);
          document.getElementById('sideBar').style.marginRight="10px";
          document.getElementById('sideBar').style.marginLeft="10px";
-         document.getElementById('sideBar').style.width="200px";
+         document.getElementById('sideBar').style.width="250px";
         document.getElementById('sideBar').style.backdropFilter="blur(10px)";
         
      }
@@ -31,7 +32,8 @@ const Navbar = () => {
          setIsNavVisible(false);
          document.getElementById('sideBar').style.marginRight="-190px"
      };
- 
+    
+   
   return (
     <>
 <header className="bg-white" style={{marginTop:"-40px"}}>
@@ -55,7 +57,7 @@ const Navbar = () => {
         </div>
         
       <div>
-        <a href='#' 
+        <a href='/Main' 
         style={{
           marginLeft:"-90px",
           fontSize:"16px",
@@ -73,7 +75,7 @@ const Navbar = () => {
   <KeyboardArrowDownIcon/>
   </button>
   <div className="dropdown-content1">
-    <a href="#">EnactSoft</a>
+    <a href="/Ourproducts"><button>EnactSoft</button></a>
     <a href="#">ExtraDonation</a>
     <a href='#'>Coupomated</a>
     <a href="#">Upcoming Launches</a>
@@ -331,7 +333,9 @@ const Navbar = () => {
   </div>
 </div>
 <a href='#' style={{fontSize:"16px",fontWeight:"600"}}>Blog</a>
-<Button  sx={{marginLeft:{md:"13px",lg:"38px"},color:"white",borderRadius:"11px",width:"100px",height:"45px",marginRight:{md:"-50px"}}} className='bg-gradient-to-r from-emerald-500 to-orange-500  '>Let's Talk</Button>
+<a href='/Letstalk'><Button  sx={{marginLeft:{md:"13px",lg:"38px"},color:"white",borderRadius:"11px",
+width:"100px",height:"45px",marginRight:{md:"-50px"}}} 
+className='bg-gradient-to-r from-emerald-500 to-orange-500  '>Let's Talk</Button></a>
       </div>
       
       </nav>
@@ -356,11 +360,11 @@ const Navbar = () => {
               <CloseIcon style={{fontSize:"32px",float:"right",marginTop:"10px",marginRight:"-150px"}}/>
             </button>
             <div style={{display:"block",marginTop:"40px"}}>
-                <a href='#' style={{display:"block"}}>Home</a>
+                <a href='/Main' style={{display:"block",textDecoration:"none",fontSize:"17px",fontWeight:"500"}}>Home</a>
                 <div className="dropdown">
-  <button className="dropbtn" style={{display:"block"}}>Products<KeyboardArrowDownIcon/></button>
+  <button className="dropbtn1" style={{display:"block"}}>Products<KeyboardArrowDownIcon/></button>
   <div className="content1">
-    <a href="#">EnactSoft</a>
+    <a href="/Ourproducts"><button>EnactSoft</button></a>
     <a href="#">ExtraDonation</a>
     <a href='#'>Coupomated</a>
     <a href="#">Upcoming Launches</a>
@@ -368,7 +372,7 @@ const Navbar = () => {
   </div>
 </div>
 <div className="dropdown" style={{display:"block"}}>
-  <button className="dropbtn" >What We Do<KeyboardArrowDownIcon/></button>
+  <button className="dropbtn1" >What We Do<KeyboardArrowDownIcon/></button>
   <div className="content1">
   <a href='#' style={{fontSize:"20px"}}>Services</a>
     <a href="#">Mobile App Development</a>
@@ -387,7 +391,7 @@ const Navbar = () => {
   </div>
 </div>
     <div className="dropdown" style={{display:"block"}}>
-  <button className="dropbtn">Whom We Serve<KeyboardArrowDownIcon/></button>
+  <button className="dropbtn1">Whom We Serve<KeyboardArrowDownIcon/></button>
   <div className="content1">
     <a href="#">Industries</a>
     <a href="#">StartUp Companies</a>
@@ -404,25 +408,37 @@ const Navbar = () => {
     <a href='#'>Featured Work</a>
   </div>
 </div>
-    <div className="dropdown" style={{display:"block"}}>
-  <button className="dropbtn">Careers<KeyboardArrowDownIcon/></button>
+    <div className="dropdown " style={{display:"block"}}>
+  <button className="dropbtn1 ">Careers<KeyboardArrowDownIcon/></button>
   <div className="content1">
     <a href="#">WorkLife@EnactOn</a>
     <a href="#">Open Positions/vacancies</a>
     <a href='#'>Apply For Job Now</a>
   </div>
 </div>
-    <div className="dropdown" style={{display:"block"}}>
-  <button className="dropbtn">Company<KeyboardArrowDownIcon/></button>
+ <div className="dropdown " style={{display:"block"}}>
+  {/* <button className="dropbtn ">Company<KeyboardArrowDownIcon/></button> */}
   <div className="content1">
-    <a href="#">About Us</a>
+    <a href="#">AboutUS</a>
     <a href="#">Our Infrastructure</a>
     <a href='#'>Contact Us</a>
   </div>
 </div>
-<Button sx={{fontSize:{lg:"21px"},color:"white",width:'150px',marginTop:"10px"}} 
-className='bg-gradient-to-r from-emerald-500 to-orange-500' >Let ' s talk</Button>
+    <div className="dropdown " style={{display:"block"}}>
+  <button className="dropbtn1 ">Company<KeyboardArrowDownIcon/></button>
+  <div className="content1" >
+    <a href="#">About Us</a>
+    <a href="#">Our Infrastructure</a>
+    <a href='#'>Contact Us</a>
+  </div>
+  
 </div>
+<a href='#' style={{textDecoration:"none",fontSize:"17px",fontWeight:"600"}} className='blo'>Blog</a>
+
+</div>
+<a href="/Letstalk"><Button sx={{fontSize:{lg:"21px"},color:"white",width:'150px',marginTop:"20px"}} 
+className='bg-gradient-to-r from-emerald-500 to-orange-500 talk'
+ >Let ' s talk</Button></a>
               </div>
               </div>
             </Box>

@@ -11,7 +11,7 @@ const Customer = () => {
                 alt="Responsive" 
                 className="img-fluid rounded"
             />
-            <a href='view.jsx'>View All Our Customers -></a>
+            <a href='/View'><button>View All Our Customers -></button></a>
     </div>
     </>
   )

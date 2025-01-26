@@ -1,0 +1,12 @@
+.prod{
+    display: flex;
+    margin-top: 30px;
+}
+.our{
+    margin-top: 90px;
+}
+@media screen and (max-width: 768px){
+    .prod{
+        display: block;
+    }
+}

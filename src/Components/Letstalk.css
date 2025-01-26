@@ -1,0 +1,238 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2f2f2f;
+}
+
+h3 {
+    color: #1c1b1b;
+}
+
+p {
+    margin: 10px 0;
+    color: #343333;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #343434;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.submit {
+    background: linear-gradient(135deg, #18ac76, #eda150);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-size: 20px;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+.insta{
+    background: #833ab4;
+  background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+  
+}
+.twitter{
+    color: #0A66C2;
+    
+}
+.robo{
+    padding: 15px;
+    box-shadow: 0 0 2px rgb(79, 79, 79);
+    border: 1px solid #2f2f2f;
+    margin: 9px;
+}
+/* Container */
+.slider-container {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+  }
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .active-dot {
+    background-color: black;
+  }
+  .nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .project{
+    background-color: #FEC978;
+    border-radius: 10px;
+    height: 220px;
+    /* margin-bottom: 20px; */
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .career{
+    background-color: #54A3AF;
+    border-radius: 9px;
+    height: 220px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .reach{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    .reach {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project{
+        width: 95%;
+        max-width: 600px;
+        min-width: 300px;
+    }
+    .career{
+      width: 95%;
+      max-width: 600px;
+    }
+}

@@ -1,4 +1,4 @@
-/* General Footer Styling */
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,6 @@
     width: 160px;
     height: 160px;
 }
-/* Footer Section Styling */
 .footer-section {
     flex: 1;
     min-width: 200px;
@@ -49,7 +48,7 @@
     font-weight: bold;
 }
 
-/* Company Info Styling */
+
 .company-info .logo {
     max-width: 150px;
     margin-bottom: 20px;
@@ -69,8 +68,6 @@
 .contact p {
     margin-bottom: 10px;
 }
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
