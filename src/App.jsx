@@ -6,6 +6,8 @@ import Footer from './Components/Footer'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Letstalk from './Components/Letstalk'
 import View from './Components/View'
+import Enactsoft from './Components/Enactsoft';
+import ExtraDonation from './Components/Extradonation';
 import Ourproducts from './Components/Ourproducts';
 
 // import Formsevent from './Components/Formsevent'
@@ -22,6 +24,7 @@ function App() {
           <Route path='letstalk' element={<Letstalk/>}/>
           <Route path='view' element={<View/>}/>
           <Route path='ourproducts' element={<Ourproducts/>}/>
+          <Route path='extradonation' element={<ExtraDonation/>}/>
         </Routes>
       </BrowserRouter>
       {/* <Main/> */}

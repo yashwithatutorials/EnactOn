@@ -76,7 +76,7 @@ const Navbar = () => {
   </button>
   <div className="dropdown-content1">
     <a href="/Ourproducts"><button>EnactSoft</button></a>
-    <a href="#">ExtraDonation</a>
+    <a href="/ExtraDonation">ExtraDonation</a>
     <a href='#'>Coupomated</a>
     <a href="#">Upcoming Launches</a>
     <a href='#'>View All Products</a>
@@ -335,7 +335,7 @@ const Navbar = () => {
 <a href='#' style={{fontSize:"16px",fontWeight:"600"}}>Blog</a>
 <a href='/Letstalk'><Button  sx={{marginLeft:{md:"13px",lg:"38px"},color:"white",borderRadius:"11px",
 width:"100px",height:"45px",marginRight:{md:"-50px"}}} 
-className='bg-gradient-to-r from-emerald-500 to-orange-500  '>Let's Talk</Button></a>
+className='btn  talk'>Let's Talk</Button></a>
       </div>
       
       </nav>
@@ -437,7 +437,7 @@ className='bg-gradient-to-r from-emerald-500 to-orange-500  '>Let's Talk</Button
 
 </div>
 <a href="/Letstalk"><Button sx={{fontSize:{lg:"21px"},color:"white",width:'150px',marginTop:"20px"}} 
-className='bg-gradient-to-r from-emerald-500 to-orange-500 talk'
+className='btn talk'
  >Let ' s talk</Button></a>
               </div>
               </div>

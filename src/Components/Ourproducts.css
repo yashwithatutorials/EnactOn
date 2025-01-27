@@ -10,3 +10,6 @@
         display: block;
     }
 }
+.btn{
+    background: linear-gradient(to right, #489fb5, #f0a04b);
+}
